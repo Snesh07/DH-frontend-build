@@ -35,11 +35,11 @@ a {
   justify-content: baseline;
 }
 
-.nav-wrapper img {
-  width: 30px;
+.logo img {
+  width: 50px;
 }
 
-.nav-wrapper a {
+.logo a {
   margin-left: 20px;
   font-size: 28px;
   text-decoration-line: none;
