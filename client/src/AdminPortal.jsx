@@ -70,7 +70,7 @@ const AdminPortal = () => {
   });
 
 
-  const url = "/api/addProject/";
+  const url = "/api/addProject";
 
 
   const [data, setData] = useState({
