@@ -9,10 +9,10 @@ import Carousel from './Carousel';
 
 import { saveAs } from 'file-saver'
 
-const images1 = [
-    'pic1.jpeg',
-    'pic2.jpeg'
-]
+// const images1 = [
+//     'pic1.jpeg',
+//     'pic2.jpeg'
+// ]
 
 const ThirdPage = () => {
     const location = useLocation();
