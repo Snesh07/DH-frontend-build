@@ -175,7 +175,7 @@ const AdminPortal = () => {
   }
 
   function handleImages(e) {
-    //    console.log(e.target.files);
+      //  console.log(e.target.files);
     setData({ ...data, [e.target.name]: e.target.files });
   }
 

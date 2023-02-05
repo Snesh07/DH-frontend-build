@@ -5,8 +5,14 @@ import { useLocation } from 'react-router-dom';
 import { useRef, useState, useEffect } from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import 'mapbox-gl/dist/mapbox-gl.css';
+import Carousel from './Carousel';
 
 import { saveAs } from 'file-saver'
+
+const images1 = [
+    'pic1.jpeg',
+    'pic2.jpeg'
+]
 
 const ThirdPage = () => {
     const location = useLocation();
@@ -59,7 +65,7 @@ return (
                 </div>
 
                 {/* <!-- Navbar Links --> */}
-
+                  
                 <div>
                     <ul id="menu">
                         <li><a href="/">Home</a></li>
@@ -85,7 +91,7 @@ return (
         <div className="about-property">
             <div className="img-map">
                 <div className="property-images" id="third-propImg">
-                    <img src={location.state.imgsrc} alt="Property Image" />
+                <Carousel images={location.state.imgsrc} />
                 </div>
                 <div ref={mapContainer} className="property-map mapBox" id="third-propMap" >
                 </div>

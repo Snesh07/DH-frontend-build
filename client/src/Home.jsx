@@ -109,7 +109,7 @@ const handleclick =(e)=>{
             id="apartment"
             name="opt-1"
             houseue="Apartment"
-            checked={props.propertyTypeArr[0]}
+            checked={!props.propertyTypeArr[0]}
             onChange={() => props.handlePropertyTypeArr(0)}
           />
           <label for="Apartment">Apartment</label>
@@ -119,7 +119,7 @@ const handleclick =(e)=>{
             id="villa"
             name="opt-2"
             houseue="Villa"
-            checked={props.propertyTypeArr[1]}
+            checked={!props.propertyTypeArr[1]}
             onChange={() => props.handlePropertyTypeArr(1)}
           />
           <label for="villa">Villa</label>
@@ -130,7 +130,7 @@ const handleclick =(e)=>{
             id="plot"
             name="opt-3"
             houseue="Plot"
-            checked={props.propertyTypeArr[2]}
+            checked={!props.propertyTypeArr[2]}
             onChange={() => props.handlePropertyTypeArr(2)}
           />
           <label for="plot">Plot</label>
