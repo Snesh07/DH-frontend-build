@@ -23,7 +23,7 @@ const TempIndex = () => {
                         imgsrc={house.photos[0]}
                         title={house.propertyName}
                         about={house.about}
-                        address={house.city}
+                        address={house.price}
                         bhk={house.bedrooms}
                         price={house.price}
 

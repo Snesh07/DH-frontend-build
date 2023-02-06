@@ -106,7 +106,7 @@ const SecondPgNavFiltr = (props) => {
       return 0;
     });
 
-    console.log("after areatype filter", tempHouses);
+    // console.log("after areatype filter", tempHouses);
     //  console.log("Bfeore filteration")
     //  console.log(tempHouses);
     tempHouses = tempHouses.filter((house) => {
@@ -426,7 +426,7 @@ const SecondPgNavFiltr = (props) => {
                         type="checkbox"
                         name=""
                         id=""
-                        checked={areaType[0]}
+                        checked={!areaType[0]}
                         onChange={() => handleAreaType(0)}
                       />
                       <label>Residential</label>
@@ -436,7 +436,7 @@ const SecondPgNavFiltr = (props) => {
                         type="checkbox"
                         name=""
                         id=""
-                        checked={areaType[1]}
+                        checked={!areaType[1]}
                         onChange={() => handleAreaType(1)}
                       />
                       <label>Commercial</label>
@@ -446,7 +446,7 @@ const SecondPgNavFiltr = (props) => {
                         type="checkbox"
                         name=""
                         id=""
-                        checked={areaType[2]}
+                        checked={!areaType[2]}
                         onChange={() => handleAreaType(2)}
                       />
                       <label>Resi-Com</label>
@@ -563,7 +563,7 @@ const SecondPgNavFiltr = (props) => {
                         type="checkbox"
                         name=""
                         id=""
-                        checked={propertyAge[0]}
+                        checked={!propertyAge[0]}
                         onChange={() => handlePropertyAge(0)}
                       />
                       <label>0-2 Years</label>
@@ -573,7 +573,7 @@ const SecondPgNavFiltr = (props) => {
                         type="checkbox"
                         name=""
                         id=""
-                        checked={propertyAge[1]}
+                        checked={!propertyAge[1]}
                         onChange={() => handlePropertyAge(1)}
                       />
                       <label>3-5 Years</label>
@@ -583,7 +583,7 @@ const SecondPgNavFiltr = (props) => {
                         type="checkbox"
                         name=""
                         id=""
-                        checked={propertyAge[2]}
+                        checked={!propertyAge[2]}
                         onChange={() => handlePropertyAge(2)}
                       />
                       <label>6-10 Years</label>
@@ -593,7 +593,7 @@ const SecondPgNavFiltr = (props) => {
                         type="checkbox"
                         name=""
                         id=""
-                        checked={propertyAge[3]}
+                        checked={!propertyAge[3]}
                         onChange={() => handlePropertyAge(3)}
                       />
                       <label>10+ Years</label>
@@ -630,7 +630,6 @@ const SecondPgNavFiltr = (props) => {
                     </div>
                   </div>
                 </div>
-
                 <hr />
                 <div className="furnished">
                   <div className="check1">
@@ -638,7 +637,7 @@ const SecondPgNavFiltr = (props) => {
                       type="checkbox"
                       name=""
                       id=""
-                      checked={furnishedArr[0]}
+                      checked={!furnishedArr[0]}
                       onChange={() => handleFurnishedArr(0)}
                     />
                     <label>Furnished</label>
@@ -648,7 +647,7 @@ const SecondPgNavFiltr = (props) => {
                       type="checkbox"
                       name=""
                       id=""
-                      checked={furnishedArr[1]}
+                      checked={!furnishedArr[1]}
                       onChange={() => handleFurnishedArr(1)}
                     />
                     <label>Semi-Furnished</label>
@@ -658,7 +657,7 @@ const SecondPgNavFiltr = (props) => {
                       type="checkbox"
                       name=""
                       id=""
-                      checked={furnishedArr[2]}
+                      checked={!furnishedArr[2]}
                       onChange={() => handleFurnishedArr(2)}
                     />
                     <label>Unfurnished</label>
